@@ -7,7 +7,7 @@ Very simple:
 
 ```ruby
 skill_parser = Parsers::UpWork::SkillsParser.new('a'..'z')
-skill_parser.parse_pages
+skill_parser.scrape_pages
 skill_parser.data #=> Array[..]
 ```
 

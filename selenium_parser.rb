@@ -3,7 +3,7 @@ require 'selenium-webdriver'
 
 
 # skill_parser = Parsers::UpWork::SkillsParser.new('a'...'c')
-# skill_parser.parse_pages
+# skill_parser.scrape_pages
 # p skill_parser.data
 
 module Parsers
@@ -20,7 +20,7 @@ module Parsers
         @data = []
       end
 
-      def parse_pages
+      def scrape_pages
         @pages.each do |page|
           @browser.get "https://www.upwork.com/i/freelancer-skills-#{page}/"
           links_xpath = "//*[contains(@class, 'skill-item')]/a"

@@ -6,7 +6,7 @@ require 'nokogiri'
 # Simple usage :)
 
 # skill_parser = Parsers::UpWork::SkillsParser.new ('a'..'z')
-# skill_parser.parse_pages
+# skill_parser.scrape_pages
 # p skill_parser.data
 
 module Parsers
@@ -22,7 +22,7 @@ module Parsers
         @data = []
       end
 
-      def parse_pages
+      def scrape_pages
         @pages.each do |page|
           uri = URI("https://www.upwork.com/i/freelancer-skills-#{page}/")
           doc = Nokogiri::HTML(Net::HTTP.get(uri)) do |config|
