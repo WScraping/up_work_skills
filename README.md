@@ -1,4 +1,6 @@
 # UpWork skills parser
+Article: [Scrape UpWork skills with Nokogiri](http://max-si-m.github.io/scraping-upwork-skills/)
+
 Just for fun, maybe it will be helpful for someone :smile:
 
 ## Usage
